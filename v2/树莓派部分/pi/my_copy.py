@@ -17,7 +17,7 @@ cap.set(4, hCam)
 detector = htm.handDetector(detectionCon=0.7)
 
 while True:
-    success, img = cap.read()
+    success, img = cap.read()#读取到的图像
     img = detector.findHands(img)
     lmList = detector.findPosition(img, draw=False)
 
